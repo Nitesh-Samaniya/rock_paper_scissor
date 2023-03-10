@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.title{
+    text-align: center;
+}
+
+.score{
+    width: 40%;
+    margin: auto;
+    border: 1px solid black;
+    justify-content: space-between;
+    display: none;
+}
+
+.score > div{
+    border: 1px solid red;
+}
+
+.input_field{
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.sign_reveal{
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play_area{
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
