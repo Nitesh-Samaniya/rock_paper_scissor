@@ -1,23 +1,20 @@
-let comp_score = document.querySelector(".comp_score");
-let comp_score_value = 0;
-comp_score.textContent = comp_score_value;
+let themeCode = true;
+let body = document.querySelector("body");
+let themeBtn = document.querySelector(".themeBtn");
+let title_with_score = document.querySelector(".title_with_score");
 
-function submit_btn(){
-    let user_name_input = document.querySelector(".user_name_input");
-    if(user_name_input.value.length === 0){
-        alert("please insert your name");
-        return;
+function theme(){
+    if(themeCode){
+        themeCode = false;
+        body.style.backgroundColor = "white"
+        body.style.color = "black"
+        themeBtn.textContent = "Dark Theme"
+        title_with_score.style.border = "2px solid black"
+    }else{
+        themeCode = true;
+        body.style.backgroundColor = "#030b17"
+        body.style.color = "white"
+        themeBtn.textContent = "Light Theme"
+        title_with_score.style.border = "1px solid white"
     }
-    let score = document.querySelector(".score");
-    score.style.display = "flex";
-
-    document.querySelector(".user_name").textContent = user_name_input.value;
-
-    let input_field = document.querySelector(".input_field");
-    input_field.style.display = "none";
 }
-
-
-let user_score = document.querySelector(".user_score");
-let user_score_value = 0
-user_score.textContent = user_score_value

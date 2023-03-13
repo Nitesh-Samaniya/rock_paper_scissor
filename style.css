@@ -1,42 +1,96 @@
 *{
-    margin: 0%;
+    margin: 0.2%;
     padding: 0%;
 }
 
-.title{
+body{
+    background-color: #030b17;
+    color: white;
+    font-family: cursive;
+}
+
+/* theme start */
+.theme{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.theme button{
+    border: 3px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 6px;
+    font-family: cursive;
+    font-size: larger;
+}
+/* theme end */
+
+/* title_with_score start */
+.title_with_score{
+    width: 55%;
+    margin: auto;
+    margin-top: 0px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.title_with_score .title_with_score-title{
+    font-size: xx-large;
+    width: 22%;
+}
+
+.title_with_score .title_with_score-score{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    font-size: larger;
+    line-height: 35px;
 }
 
-.score{
-    width: 40%;
-    margin: auto;
-    border: 1px solid black;
-    justify-content: space-between;
-    display: none;
+.title_with_score .title_with_score-exact_score{
+    font-size: xx-large;
+}
+/* title_with_score end */
+
+
+/* media query for tablet */
+@media only screen and (max-width: 900px) {
+    /* title_with_score start */
+    .title_with_score{
+        width: 70%;
+        margin-top: 5px;
+    }
+    .title_with_score .title_with_score-title{
+        font-size: x-large;
+        width: 22%;
+    }
+    /* title_with_score end */   
 }
 
-.score > div{
-    border: 1px solid red;
+/* media query for mobile view */
+@media only screen and (max-width: 500px) {
+    /* title_with_score start */
+    .title_with_score{
+        width: 85%;
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    .title_with_score .title_with_score-title{
+        font-size: x-large;
+        width: 100%;
+        text-decoration: underline;
+        margin-bottom: 15px;
+    }
+    .title_with_score .title_with_score-score{
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+        line-height: 25px;
+    }
+    /* title_with_score end */   
 }
 
-.input_field{
-    width: 40%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.sign_reveal{
-    width: 40%;
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.play_area{
-    width: 40%;
-    margin: auto;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}

@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">Rock Paper Scissor</h1>
+    <!-- theme start -->
+    <div class="theme">
+       <button class="themeBtn" onclick="theme()">Light Theme</button> 
+    </div>
+    <!-- theme end -->
 
-    <div class="score">
-        <div>
-            <p>Computer</p>
-            <p class="comp_score"></p>
+    <!-- title_with_score start -->
+    <div class="title_with_score">
+        <div class="title_with_score-title">ROCK PAPER SCISSORS</div>
+        <div class="title_with_score-score">
+            <div>
+                <p>COMPUTER</p>
+                <p>SCORE</p>
+                <p class="title_with_score-exact_score">0</p>
+            </div>
+            <div>
+                <p>YOUR</p>
+                <p>SCORE</p>
+                <p class="title_with_score-exact_score">0</p>
+            </div>
         </div>
-        <div>
-            <p class="user_name"></p>
-            <p class="user_score"></p>
-        </div>
     </div>
-
-    <div class="input_field">
-        <input class="user_name_input" type="text" placeholder="Enter your name">
-        <button class="submit_btn" onclick="submit_btn()">Submit</button>
-    </div>
-
-    <div class="sign_reveal">
-        <p class="comp_sign"></p>
-        <p class="user_sign"></p>
-    </div>
-
-    <div class="play_area">
-        <button>Computer</button>
-        <button>You</button>
-    </div>
+    <!-- title_with_score end -->
 
     <script src="./script.js"></script>
 </body>
