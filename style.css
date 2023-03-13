@@ -56,6 +56,34 @@ body{
 /* title_with_score end */
 
 
+/*  rules_and_next start  */
+.rules_and_next{
+    width: 20%;
+    position: absolute;
+    bottom: 00px;
+    right: 00px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;}
+
+.rules_and_next img{
+    width: 100%;
+    display: none;
+}
+
+.rules_and_next div{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rules_and_next div button{
+    padding: 5px 30px;
+    font-size: 17px;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+
 /* media query for tablet */
 @media only screen and (max-width: 900px) {
     /* title_with_score start */
@@ -72,6 +100,9 @@ body{
 
 /* media query for mobile view */
 @media only screen and (max-width: 500px) {
+    *{
+        margin: 0%;
+    }
     /* title_with_score start */
     .title_with_score{
         width: 85%;
@@ -92,5 +123,13 @@ body{
         line-height: 25px;
     }
     /* title_with_score end */   
+
+    /*  rules_and_next start  */
+    .rules_and_next{
+        width: 40%;
+        position: absolute;
+        bottom: 00px;
+        right: 00px;
+    }
 }
 
