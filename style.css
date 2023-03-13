@@ -1,6 +1,7 @@
 *{
     margin: 0.2%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 body{
@@ -52,6 +53,7 @@ body{
 
 .title_with_score .title_with_score-exact_score{
     font-size: xx-large;
+    color: red;
 }
 /* title_with_score end */
 
@@ -82,6 +84,50 @@ body{
     border-radius: 11px;
     cursor: pointer;
 }
+/*  rules_and_next end  */
+
+
+/* symbols started */
+.symbols{
+    width: 25%;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.symbols h1{
+    margin-bottom: 10px;
+    color: red;
+    text-align: center;
+}
+
+.symbols .symbols_firstDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.symbols .symbols_secondDiv{
+    text-align: center;
+}
+
+.symbols img{
+    width: 30%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#paper:hover{
+    background-color: aqua;
+    border: 1px solid aqua;
+}
+#rock:hover{
+    border-radius: 20%;
+}
+#scissor:hover{
+    border-radius: 20%;
+
+}
+/* symbols end */
 
 
 /* media query for tablet */
@@ -96,6 +142,13 @@ body{
         width: 22%;
     }
     /* title_with_score end */   
+
+    /* symbols started */
+    .symbols{
+        width: 50%;
+        border: 1px solid red;
+    }
+    /* symbols end */
 }
 
 /* media query for mobile view */
@@ -131,5 +184,14 @@ body{
         bottom: 00px;
         right: 00px;
     }
+    /*  rules_and_next end  */
+
+    /* symbols started */
+    .symbols{
+        width: 90%;
+        border: 1px solid red;
+    }
+    /* symbols end */
+
 }
 
