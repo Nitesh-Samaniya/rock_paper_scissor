@@ -21,12 +21,12 @@
             <div>
                 <p>COMPUTER</p>
                 <p>SCORE</p>
-                <p class="title_with_score-exact_score">0</p>
+                <p class="title_with_score-exact_score comp_score_result"></p>
             </div>
             <div>
                 <p>YOUR</p>
                 <p>SCORE</p>
-                <p class="title_with_score-exact_score">0</p>
+                <p class="title_with_score-exact_score user_score_result"></p>
             </div>
         </div>
     </div>
@@ -55,6 +55,24 @@
     </div>
     <!-- symbols end -->
 
+    <!-- output area start -->
+    <div class="output">
+        <div class="comp_output">
+            <p>COMPUTER</p>
+            <p class="comp_output_para"></p>
+        </div>
+        <div class="show_output"></div>
+        <div class="user_output">
+            <p>USER</p>
+            <p class="user_output_para"></p>
+        </div>
+    </div>
+    <!-- output area end -->
+
+    <div class="pop-up">
+        <p class="pop-up_answer"></p>
+        <button onclick="startNewGame()">Play Again</button>
+    </div>
 
     <script src="./script.js"></script>
 </body>

@@ -129,6 +129,53 @@ body{
 }
 /* symbols end */
 
+/* output area start */
+.output{
+    width: 30%;
+    margin: auto;
+    margin-top: 150px;
+    display: none;
+}
+.output > div{
+    width: 120px;
+    height: 130px;
+    margin: auto;
+    border: 3px solid red;
+    text-align: center;
+}
+
+.output .show_output{
+    font-size: xx-large;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* pop-up */
+.pop-up{
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    height: 180px;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+    padding: 20px;
+}
+.pop-up .pop-up_answer{
+    font-size: xx-large;
+}
+
+.pop-up button{
+    padding: 5px 30px;
+    font-size: 17px;
+    border-radius: 11px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
 
 /* media query for tablet */
 @media only screen and (max-width: 900px) {
@@ -146,7 +193,6 @@ body{
     /* symbols started */
     .symbols{
         width: 50%;
-        border: 1px solid red;
     }
     /* symbols end */
 }
@@ -189,9 +235,17 @@ body{
     /* symbols started */
     .symbols{
         width: 90%;
-        border: 1px solid red;
     }
     /* symbols end */
 
-}
+    /* output area */
+    .output{
+        width: 90%;
+    }
+
+    /* pop-up start */
+    .pop-up{
+        width: 60%;
+    }
+}   
 
