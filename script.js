@@ -2,6 +2,8 @@ let themeCode = true;
 let body = document.querySelector("body");
 let themeBtn = document.querySelector(".themeBtn");
 
+let title_with_score = document.querySelector(".title_with_score");
+
 let comp_score_result = document.querySelector(".comp_score_result");
 let user_score_result = document.querySelector(".user_score_result");
 
